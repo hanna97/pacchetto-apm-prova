@@ -1,0 +1,15 @@
+#!/bin/sh
+
+if [ "$#" -ne 1 ] || [ ! -r "$1" ]; then
+    printf '%s\n' 'Impossibile leggere il messaggio di commit.' >&2
+    exit 1
+fi
+
+IFS= read -r first_line < "$1" || [ -n "$first_line" ]
+case "$first_line" in
+    'ragazzi buongiorno'*) exit 0 ;;
+    *)
+        printf '%s\n' 'Il messaggio di commit deve iniziare con "ragazzi buongiorno".' >&2
+        exit 1
+        ;;
+esac

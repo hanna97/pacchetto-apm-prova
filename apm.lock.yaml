@@ -1,0 +1,168 @@
+lockfile_version: '1'
+apm_version: 0.36.0
+dependencies:
+- repo_url: hanna97/skill-apm-prova
+  name: pacchetto-2
+  host: github.com
+  resolved_commit: 667b300f1671f8a11d0bd7992f1c1cf004877458
+  resolved_ref: v1.0.0
+  version: 1.0.0
+  package_type: apm_package
+  deployed_files:
+  - .agents/skills/lettera-php-ascii
+  - .agents/skills/lettera-php-ascii/SKILL.md
+  - .agents/skills/lettera-php-ascii/scripts/genera_ascii.py
+  deployed_file_hashes:
+    .agents/skills/lettera-php-ascii/SKILL.md: sha256:789ca0c9947593e971561e7b90323d8f46ac82db156d3cbc7104235848657a25
+    .agents/skills/lettera-php-ascii/scripts/genera_ascii.py: sha256:7219f0dfa92730a0d99c5780e1fc252d70ae6e4d362ba067003ada6db3352529
+  content_hash: sha256:c5b43e142a3087b50cc42cdddb16299ebc35a0aacefe1bdc2c77c2eb0d0b9990
+deployments:
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/convertire-standard-php
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/convertire-standard-php/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:bba30af51643442023af0c3e835447d86482733458c0ee98ca15ea09083f68d2
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/curiosita-php-mcp
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/curiosita-php-mcp/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:a88d32701f0a6f229b847fb0644868ccf671bf52f4bd2440c4f11b7f30b2f5d6
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/lettera-php-ascii
+  runtime: null
+  scope: project
+  owners:
+  - hanna97/skill-apm-prova
+  active_owner: hanna97/skill-apm-prova
+  content_hash: null
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/lettera-php-ascii/SKILL.md
+  runtime: null
+  scope: project
+  owners:
+  - hanna97/skill-apm-prova
+  active_owner: hanna97/skill-apm-prova
+  content_hash: sha256:789ca0c9947593e971561e7b90323d8f46ac82db156d3cbc7104235848657a25
+- kind: project-relative
+  target: copilot
+  value: .agents/skills/lettera-php-ascii/scripts/genera_ascii.py
+  runtime: null
+  scope: project
+  owners:
+  - hanna97/skill-apm-prova
+  active_owner: hanna97/skill-apm-prova
+  content_hash: sha256:7219f0dfa92730a0d99c5780e1fc252d70ae6e4d362ba067003ada6db3352529
+- kind: project-relative
+  target: copilot
+  value: .github/agents/standard-php.agent.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:8ccba32fe4806705f2b89d0cd92384e9515781489651a97511d52fbf29bea607
+- kind: project-relative
+  target: copilot
+  value: .github/hooks/pacchetto-standard.json
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:0413b0a0e4099a432e61e7829503c472ce8cae61aae9217dfc1fb4757cbcd647
+- kind: project-relative
+  target: copilot
+  value: .github/instructions/comunicazione-commit.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:6458164aef954d85bc49edf0568fb81653cc44b0db7aa687782a0835456ce9e6
+- kind: project-relative
+  target: copilot
+  value: .github/instructions/php.instructions.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:5d527f5ceee78be62ef74b5ae7c6133ffdf1b3c87fe6f2ba8f20aee6831ead63
+- kind: project-relative
+  target: copilot
+  value: .github/prompts/convertire-php.prompt.md
+  runtime: null
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:18f4af407da1f12b992ac0cdc715574d61cff409101fcab941048c4f787ee672
+- kind: uri
+  target: mcp
+  value: everything
+  runtime: copilot
+  scope: project
+  owners:
+  - .
+  active_owner: .
+  content_hash: sha256:dfba6987582c967bd040dda7f0d85b6a960355985f012d8b3829caa74c790e55
+mcp_servers:
+- everything
+mcp_configs:
+  everything:
+    name: everything
+    transport: stdio
+    args:
+    - -y
+    - '@modelcontextprotocol/server-everything@2.3.1'
+    registry: false
+    command: npx
+mcp_target_servers:
+  copilot:
+  - everything
+local_deployed_files:
+- .agents/skills/convertire-standard-php
+- .agents/skills/convertire-standard-php/SKILL.md
+- .agents/skills/curiosita-php-mcp
+- .agents/skills/curiosita-php-mcp/SKILL.md
+- .github/agents/standard-php.agent.md
+- .github/hooks/pacchetto-standard.json
+- .github/instructions/comunicazione-commit.instructions.md
+- .github/instructions/php.instructions.md
+- .github/prompts/convertire-php.prompt.md
+local_deployed_file_hashes:
+  .agents/skills/convertire-standard-php/SKILL.md: sha256:bba30af51643442023af0c3e835447d86482733458c0ee98ca15ea09083f68d2
+  .agents/skills/curiosita-php-mcp/SKILL.md: sha256:a88d32701f0a6f229b847fb0644868ccf671bf52f4bd2440c4f11b7f30b2f5d6
+  .github/agents/standard-php.agent.md: sha256:8ccba32fe4806705f2b89d0cd92384e9515781489651a97511d52fbf29bea607
+  .github/hooks/pacchetto-standard.json: sha256:0413b0a0e4099a432e61e7829503c472ce8cae61aae9217dfc1fb4757cbcd647
+  .github/instructions/comunicazione-commit.instructions.md: sha256:6458164aef954d85bc49edf0568fb81653cc44b0db7aa687782a0835456ce9e6
+  .github/instructions/php.instructions.md: sha256:5d527f5ceee78be62ef74b5ae7c6133ffdf1b3c87fe6f2ba8f20aee6831ead63
+  .github/prompts/convertire-php.prompt.md: sha256:18f4af407da1f12b992ac0cdc715574d61cff409101fcab941048c4f787ee672

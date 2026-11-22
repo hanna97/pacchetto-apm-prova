@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [
+      {
+        "type": "command",
+        "command": "php -r \"echo json_encode(['additionalContext' => 'Applica queste regole anche ai contenuti generati in chat senza modificare file: inizia ogni messaggio all utente con buongiorno ragazzi; inizia ogni messaggio di commit proposto o creato con ragazzi buongiorno; nel codice PHP, anche negli esempi, usa variabili con iniziale maiuscola, salvo nomi obbligatori o incompatibilita.']);\"",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}

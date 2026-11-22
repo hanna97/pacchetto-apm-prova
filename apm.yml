@@ -1,0 +1,22 @@
+name: pacchetto
+version: 1.0.0
+description: APM project for pacchetto
+author: Hanna Cefaro
+# Which agent platforms to deploy to.
+# Resolution order: --target flag > this field > auto-detect from filesystem.
+# Accepted values: agent-skills, antigravity, claude, codex, copilot, cursor, gemini, grok-bot, grok-build, hermes, kiro, opencode, vscode, windsurf
+targets:
+  - copilot
+dependencies:
+  apm:
+    - hanna97/skill-apm-prova#v1.0.0
+  mcp:
+    - name: everything
+      registry: false
+      transport: stdio
+      command: npx
+      args:
+        - -y
+        - "@modelcontextprotocol/server-everything@2.3.1"
+includes: auto
+scripts: {}
